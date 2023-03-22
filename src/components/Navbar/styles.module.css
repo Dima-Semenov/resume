@@ -1,0 +1,41 @@
+.nav {
+  @apply w-64 fixed z-10 top-0 bottom-0 left-0 h-full bg-primary px-4 py-24 flex items-center flex-col;
+}
+
+.block {
+  @apply pb-10 flex flex-col items-center;
+}
+
+.imgBlock {
+  @apply flex shrink-0;
+}
+
+.img {
+  @apply w-40 h-40 rounded-full object-cover border-8 border-white0.2;
+}
+
+.menuBlock {
+  @apply w-full flex;
+}
+
+@screen tablet {
+  .nav {
+    @apply w-full h-14 p-2 items-start;
+  }
+
+  .block {
+    @apply flex-row p-0 gap-2 w-full;
+  }
+
+  .imgBlock {
+    @apply h-10;
+  }
+
+  .img {
+    @apply w-10 h-10 border-4 p-0;
+  }
+
+  .menuBlock {
+    @apply fixed bottom-3 left-2/4 -translate-x-2/4 bg-primary w-min p-2 px-4 rounded-full;
+  }
+}

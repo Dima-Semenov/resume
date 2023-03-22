@@ -14,9 +14,58 @@ module.exports = {
         'white0.2': 'rgba(255,255,255,.2)',
         'white0.5': 'rgba(255,255,255,.5)',
         'white0.7': 'rgba(255,255,255,.7)',
+        loaderBG: 'rgba(0, 0, 0, 0.075)',
       },
       screens: {
-        tablet: { max: '910px' },
+        largeTablet: { max: '1050px' },
+        tablet: { max: '940px' },
+        mobile: { max: '680px' },
+        mobileSmall: { max: '560px' },
+        mobileVerySmall: { max: '420px' },
+      },
+      gridTemplateColumns: {
+        auto: 'repeat(auto-fit, minmax(300px, 1fr))',
+        autoSmall: 'repeat(auto-fit, minmax(250px, 1fr))',
+      },
+      boxShadow: {
+        base: '10px 10px 20px rgba(0, 0, 0, 0.3)',
+      },
+      keyframes: {
+        loader: {
+          '0%': {
+            width: '0',
+          },
+          '20%': {
+            width: '10%',
+          },
+          '25%': {
+            width: '24%',
+          },
+          '43%': {
+            width: '41%',
+          },
+          '56%': {
+            width: '50%',
+          },
+          '66%': {
+            width: '52%',
+          },
+          '71%': {
+            width: '60%',
+          },
+          '75%': {
+            width: '76%',
+          },
+          '94%': {
+            width: '86%',
+          },
+          '100%': {
+            width: '100%',
+          },
+        },
+      },
+      animation: {
+        loader: 'loader 2.5s ease forwards',
       },
     },
   },

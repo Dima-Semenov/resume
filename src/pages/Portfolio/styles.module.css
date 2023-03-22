@@ -1,0 +1,21 @@
+.container {
+  @apply grid grid-cols-auto pt-4 gap-4 auto-rows-fr justify-items-center;
+}
+
+@screen mobile {
+  .container {
+    @apply grid-cols-autoSmall;
+  }
+}
+
+@screen mobileSmall {
+  .container {
+    @apply pb-8;
+  }
+}
+
+@screen mobileVerySmall {
+  .container {
+    @apply auto-rows-auto;
+  }
+}

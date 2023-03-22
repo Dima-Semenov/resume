@@ -1,0 +1,55 @@
+.mediaBlock {
+  @apply flex gap-2 pt-2;
+}
+
+.link {
+  @apply w-8 h-8 rounded-full flex justify-center items-center bg-white0.7 cursor-pointer duration-300 hover:bg-white hover:scale-125;
+}
+
+.icon {
+  @apply w-5 h-5 text-primary;
+}
+
+.list {
+  @apply w-full;
+}
+
+.listItem {
+  @apply p-2 text-white font-openSans duration-300 uppercase font-semibold cursor-pointer;
+}
+
+.menuLink {
+  @apply duration-300 w-full flex gap-3 items-center;
+}
+
+.menuIcon {
+  @apply w-5 h-5 duration-300;
+}
+
+@screen tablet {
+  .mediaBlock {
+    @apply p-0 w-full justify-end;
+  }
+
+  .list {
+    @apply flex gap-3;
+  }
+
+  .menuIcon {
+    @apply w-6 h-6;
+  }
+
+  .menuTitle {
+    @apply hidden;
+  }
+}
+
+@screen mobileSmall {
+  .link {
+    @apply w-7 h-7;
+  }
+
+  .icon {
+    @apply w-4 h-4;
+  }
+}

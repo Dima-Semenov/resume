@@ -1,0 +1,7 @@
+.button {
+  @apply p-2 gap-2 uppercase border-primary border-2 font-openSans whitespace-nowrap h-fit text-sm items-center rounded-md font-semibold flex duration-300 hover:!scale-105;
+}
+
+.icon {
+  @apply w-6 h-6;
+}

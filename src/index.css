@@ -12,7 +12,7 @@
     @apply pl-64 font-sairaExtraCondensed scroll-smooth tablet:p-0;
   }
   section {
-    @apply min-h-screen p-12 flex flex-col border-b border-silver-light last:border-b-0;
+    @apply min-h-screen tablet:min-h-0 overflow-hidden tablet:first:min-h-screen p-12 flex flex-col border-b border-silver-light last:border-b-0 bg-white first:bg-transparent largeTablet:p-8 mobileVerySmall:p-4;
   }
 }
 
@@ -29,4 +29,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #ca3b02;
   cursor: pointer;
+}
+
+.not-active {
+  transition-duration: 300ms;
+  transform: scale(0.95) !important;
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(3px);
 }

@@ -1,0 +1,7 @@
+.container {
+  @apply flex gap-2 items-center cursor-pointer w-max duration-300;
+}
+
+.icon {
+  @apply w-5 h-5 duration-300;
+}

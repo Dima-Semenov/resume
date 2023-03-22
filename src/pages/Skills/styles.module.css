@@ -1,0 +1,27 @@
+.container {
+  @apply pt-10 gap-10 items-center;
+}
+
+.wrapper {
+  @apply flex items-center justify-center;
+}
+
+.title {
+  @apply absolute flex flex-col items-center gap-4 text-5xl text-primary font-semibold;
+}
+
+.icon {
+  @apply w-14 h-14;
+}
+
+@screen tablet {
+  .wrapper {
+    @apply pb-20;
+  }
+}
+
+@screen mobileSmall {
+  .wrapper {
+    @apply pb-16;
+  }
+}

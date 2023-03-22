@@ -1,0 +1,13 @@
+.container {
+  @apply flex gap-4;
+}
+
+.line {
+  @apply w-1 bg-primary mt-16 shrink-0 flex;
+}
+
+@screen mobileSmall {
+  .line {
+    @apply mt-8;
+  }
+}

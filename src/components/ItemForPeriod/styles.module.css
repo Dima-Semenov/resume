@@ -1,0 +1,67 @@
+.container {
+  @apply relative w-full pt-12;
+}
+
+.dot {
+  @apply absolute -left-6 top-14 w-3 h-3 mr-4 bg-white rounded-full border-2 border-primary;
+}
+
+.block {
+  @apply flex w-full justify-between gap-8 relative;
+}
+
+.title {
+  @apply font-sairaExtraCondensed font-bold text-silver text-2xl uppercase;
+}
+
+.subTitle {
+  @apply font-sairaExtraCondensed font-medium text-silver-light text-xl uppercase pb-4;
+}
+
+.description {
+  @apply text-silver-light font-openSans;
+}
+
+.periodTitle {
+  @apply whitespace-nowrap uppercase font-openSans text-primary font-bold text-sm;
+}
+
+@screen mobileSmall {
+  .container {
+    @apply pt-6;
+  }
+
+  .dot {
+    @apply top-7;
+  }
+
+  .block {
+    @apply gap-1;
+  }
+
+  .title {
+    @apply text-xl;
+  }
+
+  .subTitle {
+    @apply text-lg pb-2;
+  }
+
+  .description {
+    @apply text-sm;
+  }
+
+  .periodTitle {
+    @apply text-[12px];
+  }
+}
+
+@screen mobileVerySmall {
+  .periodWrap {
+    @apply flex shrink-0 max-w-[120px] w-full;
+  }
+
+  .periodTitle {
+    @apply whitespace-normal text-end;
+  }
+}

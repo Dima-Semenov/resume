@@ -1,0 +1,45 @@
+.container {
+  @apply flex flex-col border border-gray-200 rounded-lg p-2 max-w-[300px] w-full duration-300 hover:!scale-105 shadow-base;
+}
+
+.imgBlock {
+  @apply h-[130px] overflow-hidden flex shrink-0;
+}
+
+.img {
+  @apply w-full h-full object-cover object-top rounded-lg;
+}
+
+.wrapper {
+  @apply flex flex-col justify-between h-full items-center pt-5;
+}
+
+.title {
+  @apply mb-2 text-xl font-bold font-openSans text-black;
+}
+
+.description {
+  @apply mb-3 font-medium text-silver-light font-openSans text-sm text-center;
+}
+
+.block {
+  @apply flex justify-between w-full pb-3 px-2;
+}
+
+.link {
+  @apply flex gap-1 items-center border-2 border-primary text-primary rounded-md p-1 uppercase font-openSans font-bold text-[14px] hover:text-white hover:bg-primary hover:scale-105 duration-300;
+}
+
+.icon {
+  @apply w-6 h-6;
+}
+
+@screen mobile {
+  .container {
+    @apply max-w-[250px];
+  }
+
+  .link {
+    @apply text-[10px];
+  }
+}

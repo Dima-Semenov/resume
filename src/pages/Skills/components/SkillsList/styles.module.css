@@ -1,0 +1,15 @@
+.container {
+  @apply grid grid-cols-4 gap-4 pb-10;
+}
+
+@screen largeTablet {
+  .container {
+    @apply grid-cols-3;
+  }
+}
+
+@screen mobileSmall {
+  .container {
+    @apply grid-cols-2;
+  }
+}
