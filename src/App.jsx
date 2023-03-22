@@ -1,13 +1,24 @@
-import { useEffect, useState } from 'react';
+import { lazy, useEffect, useState } from 'react';
 import { Navbar } from './components';
-import {
-  About,
-  Education,
-  Experience,
-  Loader,
-  Portfolio,
-  Skills,
-} from './pages';
+
+const About = lazy(() =>
+  import('./pages').then(({ About }) => ({ default: About }))
+);
+const Education = lazy(() =>
+  import('./pages').then(({ Education }) => ({ default: Education }))
+);
+const Experience = lazy(() =>
+  import('./pages').then(({ Experience }) => ({ default: Experience }))
+);
+const Loader = lazy(() =>
+  import('./pages').then(({ Loader }) => ({ default: Loader }))
+);
+const Portfolio = lazy(() =>
+  import('./pages').then(({ Portfolio }) => ({ default: Portfolio }))
+);
+const Skills = lazy(() =>
+  import('./pages').then(({ Skills }) => ({ default: Skills }))
+);
 
 const App = () => {
   const [isLoader, setIsLoader] = useState(true);

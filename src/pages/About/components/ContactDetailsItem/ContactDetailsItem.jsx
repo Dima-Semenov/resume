@@ -15,7 +15,12 @@ const ContactDetailsItem = ({ Icon, link, target, label, index }) => (
         'group-hover:text-primary group-hover:scale-125'
       )}
     />
-    <a href={link} target={target} className='group-hover:text-primary'>
+    <a
+      href={link}
+      target={target}
+      className='group-hover:text-primary'
+      aria-label='Link to contact details'
+    >
       {label}
     </a>
   </motion.div>

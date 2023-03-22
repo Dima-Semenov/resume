@@ -11,7 +11,7 @@ const Card = ({ title, description, img, linkToGitHub, linkToDemo, index }) => (
     className={styles.container}
   >
     <div className={styles.imgBlock}>
-      <img className={styles.img} src={img} alt='logo' />
+      <img className={styles.img} src={img} alt='logo' loading='lazy' />
     </div>
 
     <div className={styles.wrapper}>
@@ -19,11 +19,21 @@ const Card = ({ title, description, img, linkToGitHub, linkToDemo, index }) => (
       <p className={styles.description}>{description}</p>
 
       <div className={styles.block}>
-        <a href={linkToDemo} target='_blank' className={styles.link}>
+        <a
+          href={linkToDemo}
+          target='_blank'
+          className={styles.link}
+          aria-label='Link to open site'
+        >
           <BiWindowOpen className={styles.icon} />
           Open demo
         </a>
-        <a href={linkToGitHub} target='_blank' className={styles.link}>
+        <a
+          href={linkToGitHub}
+          target='_blank'
+          className={styles.link}
+          aria-label='Link to open code'
+        >
           <FaGithub className={styles.icon} />
           Open code
         </a>

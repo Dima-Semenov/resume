@@ -16,6 +16,7 @@ const MenuList = () => (
         <a
           href={`#${title}`}
           className={classNames(styles.menuLink, 'group-hover:text-white')}
+          aria-label='Link to menu item'
         >
           <Icon
             className={classNames(

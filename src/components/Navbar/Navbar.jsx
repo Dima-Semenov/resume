@@ -14,7 +14,12 @@ const Nav = () => {
     <nav className={styles.nav}>
       <div className={styles.block}>
         <div className={styles.imgBlock}>
-          <img src={images.avatar} className={styles.img} />
+          <img
+            src={images.avatar}
+            className={styles.img}
+            alt='avatar'
+            loading='lazy'
+          />
         </div>
         <Title
           size='text-3xl mobileSmall:text-xl'
