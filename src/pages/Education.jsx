@@ -7,13 +7,15 @@ import {
 
 const Education = () => (
   <section id='education'>
-    <Title>Education</Title>
+    <Title additionalClass='justify-center'>
+      Education <span className='text-5xl mobileVerySmall:text-3xl'>🎓</span>
+    </Title>
     <PeriodContainer additionClass='border-b border-b-silver-light pb-12'>
       <ItemForPeriod
         mainTitle='Oles Honchar Dnipro National University'
         subTitle="Bachelor's degree"
         description='I am studying computer engineering'
-        period='September 2019 - Present'
+        period='September 2019 - June 2023'
       />
     </PeriodContainer>
 

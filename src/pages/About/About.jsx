@@ -1,5 +1,5 @@
-import { Title } from '../../components';
 import Typewriter from 'typewriter-effect';
+import { DownloadPdfButton, Title } from '../../components';
 import { CONTACT_DETAILS } from '../../utils';
 import { ContactDetailsItem, DescriptionBlock } from './components';
 
@@ -22,7 +22,7 @@ const About = () => (
             .typeString("I'm a Frond-end developer")
             .pauseFor(2500)
             .deleteChars(19)
-            .typeString('React Native developer')
+            .typeString('Next js developer')
             .pauseFor(1500)
             .deleteAll()
             .start();
@@ -38,6 +38,10 @@ const About = () => (
     </div>
 
     <DescriptionBlock />
+
+    <div className='pt-6 flex tablet:justify-center'>
+      <DownloadPdfButton />
+    </div>
   </section>
 );
 

@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-  @apply flex items-center justify-center;
+  @apply flex items-center justify-center pt-12;
 }
 
 .title {

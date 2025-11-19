@@ -1,0 +1,3 @@
+.button {
+  @apply px-4 py-2 rounded-xl border-2 font-openSans uppercase font-semibold cursor-pointer duration-300 flex justify-center items-center gap-2 mobileSmall:w-full mobileSmall:px-2 mobileSmall:py-1 mobileSmall:text-sm;
+}

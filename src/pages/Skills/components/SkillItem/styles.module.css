@@ -1,7 +1,17 @@
 .button {
-  @apply p-2 gap-2 uppercase border-primary border-2 font-openSans whitespace-nowrap h-fit text-sm items-center rounded-md font-semibold flex duration-300 hover:!scale-105;
+  @apply p-2 gap-2 uppercase border-primary border-2 font-openSans whitespace-nowrap h-fit text-sm items-center rounded-md font-semibold flex duration-300 hover:!scale-105 justify-between;
 }
 
 .icon {
   @apply w-6 h-6;
+}
+
+@screen mobileSmall {
+  .button {
+    @apply p-1 px-2 text-xs;
+  }
+
+  .icon {
+    @apply w-5 h-5;
+  }
 }

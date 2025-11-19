@@ -12,7 +12,7 @@
     @apply pl-64 font-sairaExtraCondensed scroll-smooth tablet:p-0;
   }
   section {
-    @apply min-h-screen tablet:min-h-0 overflow-hidden tablet:first:min-h-screen p-12 flex flex-col border-b border-silver-light last:border-b-0 bg-white first:bg-transparent largeTablet:p-8 mobileVerySmall:p-4;
+    @apply min-h-screen tablet:min-h-0 overflow-hidden tablet:first:min-h-screen p-12 flex flex-col border-b border-silver-light last:border-b-0 bg-white first:bg-transparent largeTablet:p-8 mobile:p-4 mobileSmall:p-2 mobileSmall:pt-6;
   }
 }
 

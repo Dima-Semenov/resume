@@ -6,6 +6,9 @@ export {
   WORKS,
   SELF_EDUCATION_DATA,
   SKILLS_DATA,
-  PORTFOLIO_DATA,
+  SKILL_CATEGORIES_ORDER,
+  SKILL_CATEGORIES,
+  COMMERCIAL_PROJECTS,
+  PET_PROJECTS,
 } from './constants';
-export { scrollActive, initialAnimationHover } from './helper';
+export { scrollActive } from './helper';

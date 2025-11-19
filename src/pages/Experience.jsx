@@ -3,7 +3,9 @@ import { WORKS } from '../utils';
 
 const Experience = () => (
   <section id='experience'>
-    <Title>Experience</Title>
+    <Title additionalClass='justify-center'>
+      Experience <span className='text-5xl mobileVerySmall:text-3xl'>👨‍💻</span>
+    </Title>
     <PeriodContainer>
       <div>
         {WORKS.map((item) => (

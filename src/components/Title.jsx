@@ -6,16 +6,18 @@ const Title = ({
   additionalClass,
   variant: Variant = 'h2',
   size = 'text-6xl mobileVerySmall:text-5xl',
+  viewport = {},
 }) => {
   return (
     <motion.div
       whileInView={{ x: 0, opacity: [0, 0.5, 1] }}
       transition={{ duration: 0.5 }}
       initial={{ x: '-100%' }}
+      viewport={viewport}
     >
       <Variant
         className={classNames(
-          'font-bold uppercase text-silver',
+          'font-bold uppercase text-silver flex gap-2 items-center',
           additionalClass,
           size
         )}

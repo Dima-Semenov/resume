@@ -1,15 +1,11 @@
 .container {
-  @apply grid grid-cols-4 gap-4 pb-10;
-}
-
-@screen largeTablet {
-  .container {
-    @apply grid-cols-3;
-  }
+  @apply grid gap-4 pb-4;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 @screen mobileSmall {
   .container {
-    @apply grid-cols-2;
+    @apply gap-2;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }

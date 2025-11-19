@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { motion } from 'framer-motion';
 import styles from './styles.module.css';
 import Title from '../Title';
 import { MenuList, SocialMedia } from './components';
@@ -11,7 +12,12 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className={styles.nav}>
+    <motion.nav
+      className={styles.nav}
+      initial={{ x: -200, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+    >
       <div className={styles.block}>
         <div className={styles.imgBlock}>
           <img
@@ -21,19 +27,21 @@ const Nav = () => {
             loading='lazy'
           />
         </div>
+
         <Title
           size='text-3xl mobileSmall:text-xl'
           additionalClass='whitespace-nowrap text-white text-center pt-2 tablet:p-0'
         >
           Dmytro <span className='text-silver'>Semenov</span>
         </Title>
+
         <SocialMedia />
       </div>
 
       <div className={styles.menuBlock}>
         <MenuList />
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

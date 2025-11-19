@@ -1,28 +1,44 @@
-import { useEffect, useRef } from 'react';
-import { initialAnimationHover, PORTFOLIO_DATA } from '../../utils';
+import { COMMERCIAL_PROJECTS, PET_PROJECTS } from '../../utils';
 import { Title } from '../../components';
 import { Card } from './components';
 import styles from './styles.module.css';
 
-const Portfolio = () => {
-  const ref = useRef(null);
+const Portfolio = () => (
+  <section id='portfolio'>
+    <Title additionalClass='justify-center'>
+      Portfolio
+      <span className='text-5xl mobileVerySmall:text-3xl'>💼</span>
+    </Title>
 
-  useEffect(() => {
-    const allProject = Array.from(ref.current.children) || [];
-    initialAnimationHover({ allProject });
-  }, []);
+    <Title
+      variant='h3'
+      size='text-3xl'
+      additionalClass='pt-6 justify-center'
+      viewport={{ once: true }}
+    >
+      Commercial projects
+    </Title>
+    <div className={styles.container}>
+      {COMMERCIAL_PROJECTS.map((item, index) => (
+        <Card key={item.id} {...item} index={index} />
+      ))}
+    </div>
 
-  return (
-    <section id='portfolio'>
-      <Title>Portfolio</Title>
+    <Title
+      variant='h3'
+      size='text-3xl'
+      additionalClass='pt-6 justify-center'
+      viewport={{ once: true }}
+    >
+      Pet projects
+    </Title>
 
-      <div ref={ref} className={styles.container}>
-        {PORTFOLIO_DATA.map((item, index) => (
-          <Card key={item.id} {...item} index={index} />
-        ))}
-      </div>
-    </section>
-  );
-};
+    <div className={styles.container}>
+      {PET_PROJECTS.map((item, index) => (
+        <Card key={item.id} {...item} index={index} />
+      ))}
+    </div>
+  </section>
+);
 
 export default Portfolio;

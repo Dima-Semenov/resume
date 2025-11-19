@@ -17,21 +17,3 @@ export const scrollActive = () => {
     }
   });
 };
-
-export const initialAnimationHover = ({ allProject }) => {
-  allProject.forEach((item) => {
-    item.addEventListener('mouseenter', () => {
-      allProject.forEach((item2) => {
-        if (item2 !== item) {
-          item2.classList.add('not-active');
-        }
-      });
-    });
-
-    item.addEventListener('mouseleave', () => {
-      allProject.forEach((item2) => {
-        item2.classList.remove('not-active');
-      });
-    });
-  });
-};

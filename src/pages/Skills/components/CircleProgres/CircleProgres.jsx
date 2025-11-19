@@ -26,7 +26,7 @@ const CircleProgres = ({ selectedSkillPersent }) => (
         strokeDasharray,
         selectedSkillPersent
       )}
-      className='text-primary duration-300'
+      className='text-primary duration-[2s]'
     />
   </svg>
 );

@@ -1,13 +1,21 @@
-import currency_converter from '../assets/currency_converter.png';
 import rick_and_morty from '../assets/rick_and_morty.png';
-import parallax from '../assets/parallax.png';
 import maimi from '../assets/miami.png';
-import avatar from '../assets/avatar.jpg';
+import avatar from '../assets/me.jpg';
+import galafarm from '../assets/galafarm.png';
+import moralia from '../assets/moralia.png';
+import eyeComms from '../assets/eyeComms.png';
+import fankota from '../assets/fankota.png';
+import socially from '../assets/socially.png';
+import todo_app from '../assets/todo_app.png';
 
 export default {
-  currency_converter,
   rick_and_morty,
-  parallax,
   maimi,
   avatar,
+  galafarm,
+  moralia,
+  eyeComms,
+  fankota,
+  socially,
+  todo_app,
 };

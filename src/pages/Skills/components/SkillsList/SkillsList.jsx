@@ -1,4 +1,3 @@
-import { SKILLS_DATA } from '../../../../utils';
 import SkillItem from '../SkillItem/SkillItem';
 import styles from './styles.module.css';
 
