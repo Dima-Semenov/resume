@@ -1,22 +1,21 @@
 const DescriptionBlock = () => (
   <div className='text-base font-medium uppercase font-openSans text-silver-light mobileSmall:text-sm'>
     <p>
-      I'm a Frontend Developer with 4+ years of hands-on experience building
-      modern, high-performance web applications. I’ve successfully delivered
-      projects in both Ukrainian and international teams, consistently focusing
-      on quality, scalability, and clean architecture.
+      I'm a Front-end developer with 4+ years of experience building modern,
+      high-performance web applications. Skilled in React, Next.js, TypeScript,
+      and state management tools such as Redux, Redux Toolkit, and Zustand.
     </p>
     <p className='py-2'>
-      I specialize in JavaScript / TypeScript, React.js / Redux, and have
-      extensive production experience with Next.js, shadcn/ui, Clerk, and Chakra
-      UI. My expertise also includes automated testing with Jest, performance
-      optimization, integration of complex APIs, and building user-friendly,
-      accessible interfaces.
+      Proficient with UI libraries (Chakra UI, Shadcn UI, Ant Design),
+      integration of complex APIs, performance optimization, and writing
+      automated tests with Jest. Strong attention to detail, clean code mindset,
+      and focus on scalable architecture.
     </p>
     <p>
-      I am persistent, responsible, a quick learner, and highly adaptable to new
-      technologies and workflows. My goal is always to deliver a reliable,
-      maintainable product and bring value to the team.
+      Experienced in collaborating with international teams, clearly
+      communicating technical ideas, and contributing to product improvements.
+      Always striving to deliver reliable, maintainable solutions and bring
+      value to both the product and the team.
     </p>
   </div>
 );

@@ -1,12 +1,12 @@
 import Typewriter from 'typewriter-effect';
-import { DownloadPdfButton, Title } from '../../components';
+import { CVButtons, Title } from '../../components';
 import { CONTACT_DETAILS } from '../../utils';
 import { ContactDetailsItem, DescriptionBlock } from './components';
 
 const About = () => (
   <section id='about' className='justify-center pt-16'>
     <Title
-      size='text-8xl mobile:text-7xl mobileSmall:text-6xl mobileVerySmall:text-5xl'
+      size='text-8xl mobile:text-7xl mobileSmall:text-6xl mobileVerySmall:text-5xl mobileVerySmall:gap-2'
       variant='h1'
     >
       Semenov <span className='text-primary'>Dmytro</span>
@@ -31,7 +31,7 @@ const About = () => (
       />
     </Title>
 
-    <div className='text-silver-light pb-12 text-base pt-4 mobileSmall:pb-8'>
+    <div className='text-silver-light pb-12 text-base pt-4 mobileSmall:pb-4'>
       {CONTACT_DETAILS.map((item, index) => (
         <ContactDetailsItem key={item.id} {...item} index={index} />
       ))}
@@ -40,7 +40,7 @@ const About = () => (
     <DescriptionBlock />
 
     <div className='pt-6 flex tablet:justify-center'>
-      <DownloadPdfButton />
+      <CVButtons />
     </div>
   </section>
 );

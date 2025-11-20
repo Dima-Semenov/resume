@@ -1,5 +1,5 @@
 .nav {
-  @apply w-64 fixed z-10 top-0 bottom-0 left-0 h-full bg-primary px-4 py-24 flex items-center flex-col animate-fromLeftToRight;
+  @apply w-64 fixed z-10 top-0 bottom-0 left-0 h-full bg-primary px-4 py-24 flex items-center flex-col animate-fromLeftToRight rounded-tr-[50px] rounded-br-[50px] shadow-[5px_0_50px_rgba(0,0,0,0.3)];
 }
 
 .block {
@@ -20,7 +20,7 @@
 
 @screen tablet {
   .nav {
-    @apply w-full h-14 p-2 items-start animate-fromTopToBottom;
+    @apply w-full h-14 p-2 items-start animate-fromTopToBottom rounded-none rounded-br-[20px] rounded-bl-[20px];
   }
 
   .block {

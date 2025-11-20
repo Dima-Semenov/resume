@@ -14,7 +14,7 @@ const Education = () => (
       <ItemForPeriod
         mainTitle='Oles Honchar Dnipro National University'
         subTitle="Bachelor's degree"
-        description='I am studying computer engineering'
+        description='Bachelor’s degree in Computer Engineering'
         period='September 2019 - June 2023'
       />
     </PeriodContainer>
