@@ -25,6 +25,7 @@ const Card = ({
       viewport={{ once: true, amount: 0.3 }}
       transition={{
         delay: index * 0.1,
+        duration: 0.5,
       }}
     >
       {/* FRONT */}

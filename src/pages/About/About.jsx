@@ -4,7 +4,7 @@ import { CONTACT_DETAILS } from '../../utils';
 import { ContactDetailsItem, DescriptionBlock } from './components';
 
 const About = () => (
-  <section id='about' className='justify-center'>
+  <section id='about' className='justify-center pt-16'>
     <Title
       size='text-8xl mobile:text-7xl mobileSmall:text-6xl mobileVerySmall:text-5xl'
       variant='h1'

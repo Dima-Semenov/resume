@@ -1,5 +1,5 @@
 .container {
-  @apply grid grid-cols-auto pt-4 gap-4 auto-rows-fr justify-items-center;
+  @apply grid grid-cols-auto pt-4 gap-4 auto-rows-fr justify-items-center gap-y-8;
 }
 
 @screen mobileSmall {
