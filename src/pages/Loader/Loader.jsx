@@ -16,7 +16,7 @@ const LoaderProgres = () => (
 );
 
 const Loader = () => (
-  <div className='h-screen flex justify-center items-center flex-col absolute w-full top-0 left-0 right-0 bottom-0 overflow-hidden'>
+  <div className='h-dvh flex justify-center items-center flex-col absolute w-full top-0 left-0 right-0 bottom-0 overflow-hidden pb-20'>
     <motion.div
       className='pb-28 tablet:p-16 mobileSmall:p-10'
       initial={{ x: 0, opacity: 1 }}

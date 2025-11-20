@@ -63,9 +63,30 @@ module.exports = {
             width: '100%',
           },
         },
+        fromLeftToRight: {
+          '0%': {
+            left: '-30%',
+          },
+          '100%': {
+            left: 0,
+          },
+        },
+        fromTopToBottom: {
+          '0%': {
+            top: '-10%',
+          },
+          '100%': {
+            top: 0,
+          },
+        },
       },
       animation: {
         loader: 'loader 2.5s ease forwards',
+        fromLeftToRight: 'fromLeftToRight 1s ease forwards',
+        fromTopToBottom: 'fromTopToBottom 1s ease forwards',
+      },
+      minHeight: {
+        dvh: '100dvh',
       },
     },
   },

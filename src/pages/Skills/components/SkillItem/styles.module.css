@@ -1,5 +1,5 @@
 .button {
-  @apply p-2 gap-2 uppercase border-primary border-2 font-openSans whitespace-nowrap h-fit text-sm items-center rounded-md font-semibold flex duration-300 hover:!scale-105 justify-between;
+  @apply p-2 gap-2 uppercase border-primary border-2 font-openSans whitespace-nowrap h-fit text-sm items-center rounded-md font-semibold flex duration-300 hover:!scale-105 justify-between mobileVerySmall:hover:!scale-100;
 }
 
 .icon {

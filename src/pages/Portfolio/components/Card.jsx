@@ -5,7 +5,6 @@ import { FaGithub } from 'react-icons/fa';
 import { TbHandClick } from 'react-icons/tb';
 import styles from './styles.module.css';
 
-
 const Card = ({
   title,
   description,

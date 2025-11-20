@@ -17,7 +17,7 @@ const Title = ({
     >
       <Variant
         className={classNames(
-          'font-bold uppercase text-silver flex gap-2 items-center',
+          'font-bold uppercase text-silver flex gap-4 items-center',
           additionalClass,
           size
         )}

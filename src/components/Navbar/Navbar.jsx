@@ -12,25 +12,27 @@ const Nav = () => {
   }, []);
 
   return (
-    <motion.nav
-      className={styles.nav}
-      initial={{ x: -200, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
-    >
+    <nav className={styles.nav}>
       <div className={styles.block}>
-        <div className={styles.imgBlock}>
+        <motion.div
+          className={styles.imgBlock}
+          initial={{ scale: 0.2, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+        >
           <img
             src={images.avatar}
             className={styles.img}
             alt='avatar'
             loading='lazy'
           />
-        </div>
+        </motion.div>
 
         <Title
-          size='text-3xl mobileSmall:text-xl'
-          additionalClass='whitespace-nowrap text-white text-center pt-2 tablet:p-0'
+          viewport={{ once: true }}
+          size='text-3xl tablet:text-xl'
+          additionalClass='whitespace-nowrap text-white text-center pt-2 tablet:p-0 !gap-1'
         >
           Dmytro <span className='text-silver'>Semenov</span>
         </Title>
@@ -41,7 +43,7 @@ const Nav = () => {
       <div className={styles.menuBlock}>
         <MenuList />
       </div>
-    </motion.nav>
+    </nav>
   );
 };
 
