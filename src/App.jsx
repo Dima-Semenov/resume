@@ -1,4 +1,5 @@
 import { lazy, useEffect, useState } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Navbar } from './components';
 
 const About = lazy(() =>
@@ -43,6 +44,7 @@ const App = () => {
         <Portfolio />
         <Skills />
       </div>
+      <SpeedInsights />
     </>
   );
 };
