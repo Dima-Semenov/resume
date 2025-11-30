@@ -63,7 +63,7 @@ export const SOCIAL_MEDIA = [
   },
   {
     Icon: FaLinkedinIn,
-    link: 'https://www.linkedin.com/in/dima-semenov-2b6226205',
+    link: 'https://www.linkedin.com/in/semenov-dmytro/',
   },
   {
     Icon: FaGithub,
@@ -102,7 +102,7 @@ export const WORKS = [
     company: 'Trinetix',
     description:
       'Development of complex features and high-impact user flows. Actively improved application performance and optimized rendering. Participated in planning, code reviews, mentoring junior developers, writing automated Jest tests, and collaborating directly with business stakeholders.',
-    period: 'June 2024 - Present',
+    period: 'June 2024 - November 2025',
   },
   {
     id: 2,
